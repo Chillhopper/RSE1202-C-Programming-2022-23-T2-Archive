@@ -1,0 +1,76 @@
+Q10)
+template<typename T1, typename T2>
+void xchange(T1& arg1, T2& arg2) {
+    T1 temp = arg1;
+    arg1 = arg2;
+    arg2 = temp;
+}
+
+Q11)
+template <typename T>
+struct is_signed {
+    static constexpr bool value = T(-1) < T(0);
+};
+
+template <int N, typename T>
+constexpr T foo(T value) {
+    static_assert(N > 0 || is_signed<T>::value, "Negative N requires signed type.");
+    if constexpr (N == 0) {
+        return T(0);
+    } else if constexpr (N > 0) {
+        return value * T(N);
+    } else { // N < 0
+        return -foo<-N>(value);
+    }
+}
+
+Q12)
+template<typename T>
+int Compare(const T& a, const T& b) {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+}
+
+Q13)
+ template <typename T, std::size_t N>
+ std::size_t Length(T  (&)[N]){
+     return N;
+ }
+
+Q15)
+template <typename T>
+class C{
+    public:
+    T add(const T &a, const T &b){
+        return a + b;
+    }
+};
+
+Q16)
+class C{
+    public:
+    template <typename T>
+    T add(const T &a, const T &b){
+        return a + b;
+    }
+};
+
+Q17)
+template <typename T>
+class wrapper {
+public:
+    explicit wrapper(T const& value) : value_(value) {}
+
+    T const& get() const {
+        return value_;
+    }
+
+    template <typename U>
+    U as() const {
+        return static_cast<U>(value_);
+    }
+
+private:
+    T value_;
+};

@@ -1,0 +1,6 @@
+g++ -std=c++17 -pedantic-errors -Wall -Wextra -Werror q.cpp q-driver.cpp -o q.out
+ ./q.out tsunamis1.txt your-output1.txt
+ ./q.out tsunamis2.txt your-output2.txt
+ ./q.out tsunamis3.txt your-output3.txt
+ diff -y --strip-trailing-cr --suppress-common-lines your-output1.txt output1.txt
+ diff -y --strip-trailing-cr --suppress-common-lines your-output3.txt output3.txt

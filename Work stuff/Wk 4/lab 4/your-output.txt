@@ -1,0 +1,65 @@
+******************** Push ********************
+List1 ( 1 nodes): 
+List2 ( 1 nodes): 
+List1 ( 2 nodes): 
+List2 ( 2 nodes): 
+List1 ( 3 nodes): 
+List2 ( 3 nodes): 
+List1 ( 4 nodes): 
+List2 ( 4 nodes): 
+List1 ( 5 nodes): 
+List2 ( 5 nodes): 
+List1 ( 6 nodes): 
+List2 ( 6 nodes): 
+List1 ( 7 nodes): 
+List2 ( 7 nodes): 
+List1 ( 8 nodes): 
+List2 ( 8 nodes): 
+List1 ( 9 nodes): 
+List2 ( 9 nodes): 
+List1 (10 nodes): 
+List2 (10 nodes): 
+List1 (11 nodes): 
+List2 (11 nodes): 
+List1 (12 nodes): 
+List2 (12 nodes): 
+List1 (13 nodes): 
+List2 (13 nodes): 
+List1 (14 nodes): 
+List2 (14 nodes): 
+List1 (15 nodes): 
+List2 (15 nodes): 
+List1 (15 nodes): 
+List2 (15 nodes): 
+******************** Find ********************
+List (12 nodes): 
+Value 56 found.
+Value 22 found.
+Value 59 found.
+Value 123 not found.
+******************** Insert ********************
+List ( 5 nodes): 
+inserting... 91 at position 3
+List ( 6 nodes): 
+inserting... 92 at position 0
+List ( 7 nodes): 
+inserting... 93 at position 50
+List ( 8 nodes): 
+inserting... 94 at position 99
+List ( 9 nodes): 
+******************** Remove ********************
+List (12 nodes): 
+Deleting: 56 (12 nodes): 
+Deleting: 22 (12 nodes): 
+Deleting: 59 (12 nodes): 
+Deleting: 99 (12 nodes): 
+Deleting: 23 (12 nodes): 
+Deleting: 38 (12 nodes): 
+Deleting: 94 (12 nodes): 
+Deleting: 34 (12 nodes): 
+Deleting: 67 (12 nodes): 
+Deleting: 56 (12 nodes): 
+Deleting: 88 (12 nodes): 
+Deleting: 19 (12 nodes): 
+Deleting: 10 (12 nodes): 
+Deleting: 99 (12 nodes): 

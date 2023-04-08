@@ -1,0 +1,52 @@
+
+******************** Default & Copy Ctor ********************
+List1 is empty
+Adding to List1:
+List1 is not empty
+List1 ( 3 nodes): 12    34    21    
+List2 ( 3 nodes): 12    34    21    
+
+******************** Push Front & Clear ********************
+sllist is empty
+dllist is empty
+Adding to Lists:
+sllist is not empty
+dllist is not empty
+SLList ( 3 nodes): 21    34    12    
+DLList ( 3 nodes): 21    34    12    
+About to clear:
+sllist is empty
+dllist is empty
+
+******************** Pop Front ********************
+SLList ( 3 nodes): 21    34    12    
+DLList ( 3 nodes): 21    34    12    
+SLList ( 2 nodes): 34    12    
+DLList ( 2 nodes): 34    12    
+SLList ( 1 nodes): 12    
+DLList ( 1 nodes): 12    
+SLList ( 0 nodes): 
+DLList ( 0 nodes): 
+SLList ( 0 nodes): 
+DLList ( 0 nodes): 
+
+******************** Push Back ********************
+SLList ( 3 nodes): 12    34    21    
+DLList ( 3 nodes): 12    34    21    
+
+******************** Insert ********************
+SLList ( 3 nodes): 3    1    2    
+DLList ( 3 nodes): 3    1    2    
+
+******************** Remove 1st ********************
+SLList ( 4 nodes): 3    1    3    2    
+DLList ( 4 nodes): 3    1    3    2    
+SLList ( 3 nodes): 1    3    2    
+DLList ( 3 nodes): 1    3    2    
+SLList ( 2 nodes): 1    2    
+DLList ( 2 nodes): 1    2    
+SLList ( 1 nodes): 1    
+DLList ( 1 nodes): 1    
+SLList ( 1 nodes): 1    
+DLList ( 1 nodes): 1    
+

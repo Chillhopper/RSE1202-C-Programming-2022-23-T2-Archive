@@ -1,0 +1,12 @@
+g++ -std=c++17 -pedantic-errors -Wall -Wextra -Werror q.cpp q-driver.cpp -o q.out
+
+g++ -std=c++17 q.cpp q-driver.cpp -o q.out
+
+
+./q.out file1.txt your-file1-stats.txt
+./q.out file2.txt your-file2-stats.txt
+./q.out file3.txt your-file3-stats.txt
+
+diff -y --strip-trailing-cr --suppress-common-lines your-file1-stats.txt file1-stats.txt
+diff -y --strip-trailing-cr --suppress-common-lines your-file2-stats.txt file2-stats.txt
+diff -y --strip-trailing-cr --suppress-common-lines your-file3-stats.txt file3-stats.txt

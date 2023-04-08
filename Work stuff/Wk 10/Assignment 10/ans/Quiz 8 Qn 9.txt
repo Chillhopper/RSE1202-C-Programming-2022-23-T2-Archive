@@ -1,0 +1,17 @@
+using FP_INT = int (*)();
+
+int f0() { return 4; }
+int f1() { return 8; }
+int f2() { return 16; }
+int f3() { return 32; }
+int f4() { return 48; }
+
+FP_INT* foo() {
+    FP_INT* p = new FP_INT[5];
+    *(p + 0) = &f0;
+    *(p + 1) = &f1;
+    *(p + 2) = &f2;
+    *(p + 3) = &f3;
+    *(p + 4) = &f4;
+    return p;
+}

@@ -1,0 +1,28 @@
+
+******************** Pop Front ********************
+list1 ( 1 nodes): 34    
+list1 ( 0 nodes): 
+No node
+
+******************** Prefix Pop Back ********************
+list1 ( 3 nodes): 12    34    21    
+--list1 ( 2 nodes): 12    34    
+----list1 ( 0 nodes): 
+--list1 (No tail
+
+******************** Postfix Pop Back ********************
+list1 ( 3 nodes): 12    34    21    
+list1-- returned ( 3 nodes): 12    34    21    
+No tail
+Final list1 ( 0 nodes): 
+
+******************** Non-const Subscript ********************
+list1 ( 0 nodes): 
+list1[0] = Subscript error at index: 0
+list1[2] = Subscript error at index: 2
+
+******************** Const Subscript ********************
+const list2 ( 3 nodes): 12    34    21    
+list2[0] = 12
+list2[3] = Exception thrown
+

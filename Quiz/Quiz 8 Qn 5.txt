@@ -1,0 +1,50 @@
+// Standard library header <ostream> is included. You cannot include any other header files!!!
+// Define enumeration type Day with the appropriate enumerators and then
+// overload prefix and postfix decrement operators and the left-shift [insert] operator ...
+enum class Day 
+{
+    Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+};
+
+std::ostream& operator<<(std::ostream& os, const Day& day) 
+{
+    switch (day) {
+        case Day::Monday:
+            os << "Monday";
+            break;
+        case Day::Tuesday:
+            os << "Tuesday";
+            break;
+        case Day::Wednesday:
+            os << "Wednesday";
+            break;
+        case Day::Thursday:
+            os << "Thursday";
+            break;
+        case Day::Friday:
+            os << "Friday";
+            break;
+        case Day::Saturday:
+            os << "Saturday";
+            break;
+        case Day::Sunday:
+            os << "Sunday";
+            break;
+        default:
+            break;
+    }
+    return os;
+}
+
+Day& operator--(Day& day) 
+{
+    day = (day == Day::Monday) ? Day::Sunday : static_cast<Day>(static_cast<int>(day) - 1);
+    return day;
+}
+
+Day operator--(Day& day, int) 
+{
+    Day temp = day;
+    --day;
+    return temp;
+}

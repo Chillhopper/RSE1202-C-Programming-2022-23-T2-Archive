@@ -1,0 +1,6 @@
+ g++ -std=c++17 -pedantic-errors -Wall -Wextra -Werror q.cpp q-driver.cpp -o lab1.out
+
+ ./lab1.out 0 > your-secret-message0.txt
+ ./lab1.out 1 > your-secret-message1.txt
+ ./lab1.out 2 > your-secret-message2.txt
+ ./lab1.out 3 > your-secret-message3.txt

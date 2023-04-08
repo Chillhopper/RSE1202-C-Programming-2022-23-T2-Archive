@@ -1,0 +1,17 @@
+make
+
+make test1
+
+make test2
+
+make test3
+
+make test-all
+
+make clean
+
+make debug-memory
+
+make debug-test1
+
+make debug-test-all
